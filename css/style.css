@@ -306,6 +306,28 @@ img {
   padding-left: 0px;
 }
 
+.about-bottom-wrapper {
+  position: relative;
+}
+
+.text-on-doing {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  color: var(--basic-color);
+  background: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  left: 0px;
+  bottom: 0px;
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 27px;
+}
+
 .img-about:not(:nth-last-child(n + 3)) {
   margin-left: 30px;
 }
@@ -684,6 +706,30 @@ img {
     1px 4px 6px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.li-scroll:hover .text-for-img {
+  transform: translateY(0);
+}
+
+.img-text-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.text-for-img {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--basic-color);
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-name {
